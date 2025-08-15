@@ -3,16 +3,13 @@ using System.Collections.Generic;
 
 public static class FinanceSystem
 {
-    // Transaction record (immutable data structure)
     public record Transaction(int Id, DateTime Date, decimal Amount, string Category);
 
-    // Transaction processor interface
     public interface ITransactionProcessor
     {
         void Process(Transaction transaction);
     }
 
-    // Concrete processor implementations
     public class BankTransferProcessor : ITransactionProcessor
     {
         public void Process(Transaction transaction)
@@ -37,7 +34,6 @@ public static class FinanceSystem
         }
     }
 
-    // Base Account class
     public class Account
     {
         public string AccountNumber { get; }
@@ -55,10 +51,9 @@ public static class FinanceSystem
         }
     }
 
-    // Sealed SavingsAccount class
     public sealed class SavingsAccount : Account
     {
-        public SavingsAccount(string accountNumber, decimal initialBalance) 
+        public SavingsAccount(string accountNumber, decimal initialBalance)
             : base(accountNumber, initialBalance) { }
 
         public override void ApplyTransaction(Transaction transaction)
@@ -75,7 +70,6 @@ public static class FinanceSystem
         }
     }
 
-    // Main Finance Application
     public class FinanceApp
     {
         private readonly List<Transaction> _transactions = new();
@@ -85,7 +79,6 @@ public static class FinanceSystem
             Console.Clear();
             Console.WriteLine("=== Finance Management System ===");
 
-            // Get account details from user
             Console.Write("Enter account number: ");
             string accountNumber = Console.ReadLine() ?? "ACC001";
 
@@ -96,16 +89,21 @@ public static class FinanceSystem
                 Console.Write("Invalid amount. Please enter a positive number: ");
             }
 
-            // Create account
             var account = new SavingsAccount(accountNumber, initialBalance);
             Console.WriteLine($"Account created with balance: GHC{account.Balance}");
 
-            // Create transactions
+            Console.Write("\nHow many transactions do you want to make? ");
+            int transactionCount;
+            while (!int.TryParse(Console.ReadLine(), out transactionCount) || transactionCount <= 0)
+            {
+                Console.Write("Invalid number. Please enter a positive integer: ");
+            }
+
             var transactions = new List<Transaction>();
-            for (int i = 1; i <= 3; i++)
+            for (int i = 1; i <= transactionCount; i++)
             {
                 Console.WriteLine($"\nEnter details for Transaction {i}:");
-                
+
                 Console.Write("Amount (GHC): ");
                 decimal amount;
                 while (!decimal.TryParse(Console.ReadLine(), out amount) || amount <= 0)
@@ -119,7 +117,6 @@ public static class FinanceSystem
                 transactions.Add(new Transaction(i, DateTime.Now, amount, category));
             }
 
-            // Process transactions
             var processors = new ITransactionProcessor[]
             {
                 new MobileMoneyProcessor(),
@@ -130,13 +127,13 @@ public static class FinanceSystem
             Console.WriteLine("\nProcessing transactions:");
             for (int i = 0; i < transactions.Count; i++)
             {
+                var processor = processors[i % processors.Length]; // cycle through processors
                 Console.WriteLine($"\nTransaction {i + 1}:");
-                processors[i].Process(transactions[i]);
+                processor.Process(transactions[i]);
                 account.ApplyTransaction(transactions[i]);
                 _transactions.Add(transactions[i]);
             }
 
-            // Display summary
             Console.WriteLine("\nTransaction Summary:");
             Console.WriteLine($"Account: {account.AccountNumber}");
             Console.WriteLine($"Final Balance: GHC{account.Balance}");
