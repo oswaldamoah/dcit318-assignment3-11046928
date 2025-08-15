@@ -1,0 +1,8 @@
+101, John Doe, 85
+102, Jane Smith, 72
+103, Alice Johnson, 91
+104, Bob Brown, 58
+105, Charlie Davis, 42
+106, Invalid Student, abc
+107, Missing Field
+108, Emily Wilson, 95

@@ -1,0 +1,6 @@
+John Doe (ID: 101): Score = 85, Grade = A
+Jane Smith (ID: 102): Score = 72, Grade = B
+Alice Johnson (ID: 103): Score = 91, Grade = A
+Bob Brown (ID: 104): Score = 58, Grade = D
+Charlie Davis (ID: 105): Score = 42, Grade = F
+Emily Wilson (ID: 108): Score = 95, Grade = A
