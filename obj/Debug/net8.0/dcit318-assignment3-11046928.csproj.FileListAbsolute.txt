@@ -1,0 +1,15 @@
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\bin\Debug\net8.0\dcit318-assignment3-11046928.exe
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\bin\Debug\net8.0\dcit318-assignment3-11046928.deps.json
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\bin\Debug\net8.0\dcit318-assignment3-11046928.runtimeconfig.json
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\bin\Debug\net8.0\dcit318-assignment3-11046928.dll
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\bin\Debug\net8.0\dcit318-assignment3-11046928.pdb
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\obj\Debug\net8.0\dcit318-assignment3-11046928.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\obj\Debug\net8.0\dcit318-assignment3-11046928.AssemblyInfoInputs.cache
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\obj\Debug\net8.0\dcit318-assignment3-11046928.AssemblyInfo.cs
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\obj\Debug\net8.0\dcit318-assignment3-11046928.csproj.CoreCompileInputs.cache
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\obj\Debug\net8.0\dcit318-assignment3-11046928.sourcelink.json
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\obj\Debug\net8.0\dcit318-assignment3-11046928.dll
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\obj\Debug\net8.0\refint\dcit318-assignment3-11046928.dll
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\obj\Debug\net8.0\dcit318-assignment3-11046928.pdb
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\obj\Debug\net8.0\dcit318-assignment3-11046928.genruntimeconfig.cache
+C:\Users\JosephLamptey\Documents\UG300\L300 SEM2\318\dcit318-assignment3-11046928\obj\Debug\net8.0\ref\dcit318-assignment3-11046928.dll
